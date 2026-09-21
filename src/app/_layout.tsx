@@ -1,10 +1,6 @@
-import { Stack } from "expo-router";
+import { Slot } from "expo-router";
+import "../styles/global.css";
 
-export default function App(){
-    return(
-        <Stack>
-            <Stack.Screen name="index"/>
-        </Stack>
-    )
- 
+export default function App() {
+  return <Slot />;
 }
