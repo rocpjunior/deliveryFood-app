@@ -18,7 +18,7 @@ export function TrendingFoods() {
 
   useEffect(() => {
     async function getFoods() {
-      const response = await fetch("http://localhost:3000/foods");
+      const response = await fetch("http://10.23.45.22:3000/foods"); //http://localhost:3000/foods
       const data = await response.json();
       setFoods(data);
     }

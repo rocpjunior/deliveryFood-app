@@ -13,7 +13,7 @@ export function RestaurantVerticalList() {
 
   useEffect(() => {
     async function getFoods() {
-      const response = await fetch("http://localhost:3000/restaurants");
+      const response = await fetch("http://10.23.45.22:3000/restaurants"); //http://localhost:3000/restaurants
       const data = await response.json();
       setRestaurants(data);
     }
